@@ -1,0 +1,270 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0%;
+}
+
+
+@font-face{
+    font-family: "spartan";
+    src: url("../fonts/Spartan-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: "spartan";
+    src: url("../fonts/Spartan-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face{
+    font-family: "spartan";
+    src: url("../fonts/Spartan-Regular.ttf");
+    font-weight: 400;
+}
+
+body{
+    font-size: 15px;
+    background: url("../images/bg-pattern-top-desktop.svg"),url("../images/bg-pattern-bottom-desktop.svg");
+    background-position: top left,bottom right;
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-family:"spartan";
+    font-weight: 700;
+    font-size: 3.5em;
+    color: hsl(300, 43%, 22%);
+}
+
+
+
+img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+svg{
+    margin:2px;
+}
+
+.section{
+    padding: 100px;
+    height: 100vh;
+}
+
+.container{
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+
+
+.introduction{
+    width: 40%;
+}
+
+.introduction p {
+    font-family: "spartan";
+    font-weight: 500;
+    color: hsl(303, 10%, 53%);
+    line-height: 150%; 
+    margin-top: 10px;
+}
+
+.rate{
+    width: 45% ; 
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;    
+    padding-bottom: 20px;  
+}
+
+
+
+.box--rate{
+    height: 50px;  
+    background-color: hsl(300, 24%, 96%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    width: 85%;                      
+    padding: 10px;
+}
+
+.box--margin{
+    margin-top:20px;   
+    margin-bottom: 20px;
+}
+
+
+
+.box--rate p{
+    font-family: "spartan";
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    padding-left: 15px;  
+    padding-right: 40px;
+}
+
+.box--middle{
+    align-self: center;
+}
+
+.box--end{
+    align-self: flex-end;
+}
+
+.client{
+    display: flex; 
+    padding-top: 70px;
+    padding-bottom: 45px; 
+
+}
+
+.costumer{
+    flex: 1;
+    background-color: hsl(300, 43%, 22%);
+    padding: 40px;  
+    border-radius: 10px;
+}
+
+.costumer--margin{
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.costumer--middle{
+    position: relative;
+    top: 15px;
+}
+
+.costumer--end{
+    position: relative;
+    top: 30px;
+    
+}
+
+.costumer p{
+    font-family: "spartan";
+    font-weight: 400;
+    line-height: 150%;
+    color: hsl(300, 24%, 96%);
+    margin-top: 30px;
+    font-size: 13px;
+}
+
+.info{
+    display: flex;
+}
+
+
+.name{
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name h4{
+    font-family: "spartan";
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+.name h5{
+    font-family: "spartan";
+    font-weight: 400;
+    color: hsl(333, 80%, 67%);;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*Responsive*/
+
+@media only screen and (max-width:480px){
+
+    body{
+        background: url("../images/bg-pattern-top-mobile.svg"),url("../images/bg-pattern-bottom-mobile.svg");
+        background-position: top left,bottom right;
+        background-repeat: no-repeat;
+    }
+    
+    h1{
+        text-align: center;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 2em;
+    }
+
+    .section{
+        padding: 80px 25px 100px 25px; 
+    }
+
+    .container{
+        display: block;
+    }
+
+    .introduction{
+        border: 2px solid blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .introduction p {
+        margin-top: 40px;
+        margin-bottom: 50px; 
+        text-align: center;
+        padding: 5px;
+    }
+
+    .rate{
+        width: 100%;
+    }
+
+
+    .rate--margin{
+        margin-bottom: 50px;
+    }
+   
+
+    .box--rate{
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 10px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .box--rate p{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .client{
+        display: block;
+    }
+
+    .costumer p{
+        font-size: 14px;
+    }
+
+    .costumer--margin{
+        margin: 15px 0;
+    }
+
+}    
